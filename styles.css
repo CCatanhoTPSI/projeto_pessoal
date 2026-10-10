@@ -68,18 +68,11 @@ nav > a {
     white-space: nowrap;
 }
 
-nav > a::before {
-    align-items: center;
-    background: var(--mint);
-    border-radius: 0.75rem;
-    color: var(--green);
-    content: "€";
-    display: inline-flex;
-    font-size: 0.9rem;
-    height: 2rem;
-    justify-content: center;
-    margin-right: 0.55rem;
-    width: 2rem;
+.brand-logo {
+    display: block;
+    flex: 0 0 auto;
+    height: auto;
+    width: 12rem;
 }
 
 nav ul {
