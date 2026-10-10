@@ -273,22 +273,6 @@ article p {
     content: " →";
 }
 
-#contacto {
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    text-align: center;
-}
-
-#contacto p {
-    color: var(--muted);
-    margin-bottom: 0.5rem;
-}
-
-#contacto a {
-    color: var(--blue);
-    font-weight: 800;
-}
-
 section[aria-label="Aviso importante"] {
     background: #fff8e6;
     border: 1px solid #f4d58a;
