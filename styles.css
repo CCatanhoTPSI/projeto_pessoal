@@ -1,6 +1,6 @@
 :root {
     --ink: #102a43;
-    --muted: #627d98;
+    --muted: #486581;
     --paper: #ffffff;
     --soft: #f4f7fb;
     --line: #d9e2ec;
@@ -104,6 +104,7 @@ main {
 
 section {
     padding: 6rem 1.5rem;
+    scroll-margin-top: 7rem;
 }
 
 #inicio {
@@ -263,14 +264,11 @@ article p {
     letter-spacing: 0.13em;
 }
 
-#conteudos article a {
+#conteudos .content-status {
     color: var(--blue);
     font-size: 0.9rem;
     font-weight: 800;
-}
-
-#conteudos article a::after {
-    content: " →";
+    margin-bottom: 0;
 }
 
 section[aria-label="Aviso importante"] {
@@ -306,6 +304,7 @@ footer p {
 
     section {
         padding: 4rem 1.25rem;
+        scroll-margin-top: 10rem;
     }
 
     #inicio {
@@ -332,5 +331,19 @@ footer p {
     section[aria-label="Aviso importante"] {
         margin-left: 1.25rem;
         margin-right: 1.25rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
